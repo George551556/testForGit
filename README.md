@@ -27,3 +27,5 @@ git branch --list 查看分支
 
 git checkout feature1 切换到feature1分支上
 
+
+2222222
