@@ -35,3 +35,9 @@ git checkout feature1 切换到feature1分支上
 
 在切换到master分支之后使用 <u>git merge feature2</u>  将master2分支合并到主分支上。**如果有冲突conflict** 则使用vi编辑该文件修改文件为想要的那个改动再出来提交即可。
 
+
+
+### 其他指令
+
+若是第一次提交给远程仓库 可以使用 **git push -u origin master**   之后每次使用 **git push** 即可提交远程仓库。非常方便。
+
