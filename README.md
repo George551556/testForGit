@@ -17,7 +17,9 @@
 
 ​	`git pull -–rebase origin master` 操作，意为先取消commit记录，并且把它们临时保存为补丁(patch)(这些补丁在”.git/rebase”目录中)，之后同步远程库到本地，最后合并补丁到本地库之中
 
+8.git commit -am '提交信息'   可以直接默契修改过的文件并提交
 
+9.git log --all --graph  以图形化式显示各分支及merge历史
 
 ### 分支
 
@@ -29,4 +31,7 @@ git checkout feature1 切换到feature1分支上
 
 
 
-2222222
+### 合并
+
+在切换到master分支之后使用 <u>git merge feature2</u>  将master2分支合并到主分支上。**如果有冲突conflict** 则使用vi编辑该文件修改文件为想要的那个改动再出来提交即可。
+
