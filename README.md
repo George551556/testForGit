@@ -27,3 +27,7 @@ git branch --list 查看分支
 
 git checkout feature1 切换到feature1分支上
 
+
+这是我feature2输入的内容。。。
+
+这是我fff1输入的内容111111111
