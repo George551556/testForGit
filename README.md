@@ -17,4 +17,13 @@
 
 ​	`git pull -–rebase origin master` 操作，意为先取消commit记录，并且把它们临时保存为补丁(patch)(这些补丁在”.git/rebase”目录中)，之后同步远程库到本地，最后合并补丁到本地库之中
 
-8.还没
+
+
+### 分支
+
+git brance feature 创建名为feature的分支
+
+git branch --list 查看分支
+
+git checkout feature1 切换到feature1分支上
+
