@@ -9,11 +9,13 @@
 
 4.git status 查看当前文件提交状态
 
-5.git remote add origin https:/a;sldkgjlkjglkwejglkwe/xxx.git     连接本地仓库到一个远程仓库
+5.git remote add origin https:/a;sldkgjlkjglkwejglkwe/xxx.git     连接本地仓库到一个**远程仓库**
 
 ​	git remote set-url origin https:/a;sldkgjlkjglkwejglkwe/xxx.git   修改连接的远程仓库地址
 
 6.git push origin master   推送分支到远程仓库
+
+​		若是第一次提交给远程仓库 可以使用 **git push -u origin master**   之后每次使用 **git push** 即可提交远程仓库。非常方便。
 
 7.[解决一个提交时文件不同步的问题](https://blog.csdn.net/m0_52316372/article/details/127446080?ops_request_misc=&request_id=&biz_id=102&utm_term=%20failed%20to%20push%20some%20refs%20to%20%27&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-1-127446080.142^v92^control&spm=1018.2226.3001.4187)  
 
@@ -39,7 +41,15 @@ git checkout feature1 切换到feature1分支上
 
 
 
-### 其他指令
+### 撤销提交reset
 
-若是第一次提交给远程仓库 可以使用 **git push -u origin master**   之后每次使用 **git push** 即可提交远程仓库。非常方便。
+git reset head~ --soft   撤销最后一次commit（而之前使用git add设置的文件暂存状态仍然存在）
+
+git reset head~             撤销commit以及暂存状态，但是修改过的内容还在
+
+git reset head~ --hard 不光把暂存取消了，也把之前修改过的内容也撤销了  **慎用** 
+
+
+
+
 
