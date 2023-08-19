@@ -1,3 +1,7 @@
+---
+typora-copy-images-to: img
+---
+
 # testForGit
 该仓库是为了学习git提交的相关操作
 
@@ -6,6 +10,8 @@
 2.git add [文件名或目录]       跟踪文件或目录
 
 3.git commit 提交暂存文件到本地仓库
+
+<img src="D:\my_projects\git_clone\git_test\img\QQ截图20230815170955.png" alt="QQ截图20230815170955" style="zoom:40%;" />
 
 4.git status 查看当前文件提交状态
 
