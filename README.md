@@ -10,7 +10,7 @@ typora-copy-images-to: img
 
 3.git commit 提交暂存文件到本地仓库
 
-<img src="D:\my_projects\git_clone\git_test\img\QQ截图20230815170955.png" alt="QQ截图20230815170955" style="zoom:40%;" />
+<img src="img\QQ截图20230815170955.png" alt="QQ截图20230815170955" style="zoom:40%;" />
 
 4.git status 查看当前文件提交状态
 
@@ -63,3 +63,7 @@ git reset head~ --hard 不光把暂存取消了，也把之前修改过的内容
 ### 注意
 
 1.在一个目录下执行git clone 命令，就可以把整个仓库拉取下来，这时候克隆下来的仓库会自动添加一个origin远程仓库指向github上的仓库。如果新建一个仓库，然后再链接远程仓库，也是一样的道理
+
+2.**我王少斌是烧杯** 
+
+![image-20230823182956851](img\image-20230823182956851.png)
