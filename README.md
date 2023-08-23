@@ -66,4 +66,4 @@ git reset head~ --hard 不光把暂存取消了，也把之前修改过的内容
 
 2.**我王少斌是烧杯** 
 
-<img src="img\222.png" alt="QQ截图20230815170955" style="zoom:40%;" />
+<img src="img\222.png" alt="222" style="zoom:40%;" />
