@@ -4,6 +4,10 @@ typora-copy-images-to: img
 # testForGit
 该仓库是为了学习git提交的相关操作
 
+0.  git config --global user.name "username" 设置账户名和邮箱
+
+​		git config --global user.email "email"
+
 1.在本地使用git init初始化当前目录为一个仓库
 
 2.git add [文件名或目录]       跟踪文件或目录
@@ -31,6 +35,8 @@ typora-copy-images-to: img
 9.git log 显示提交历史
 
 10.git log --all --graph  以图形化式显示各分支及merge历史
+
+11.
 
 ### 分支
 
