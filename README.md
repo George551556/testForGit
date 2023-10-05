@@ -18,9 +18,27 @@ typora-copy-images-to: img
 
 4.git status 查看当前文件提交状态
 
-5.git remote add origin https:/a;sldkgjlkjglkwejglkwe/xxx.git     连接本地仓库到一个**远程仓库**
+5.**远程仓库**
 
-​	git remote set-url origin https:/a;sldkgjlkjglkwejglkwe/xxx.git   修改连接的远程仓库地址
+连接本地仓库到远程仓库
+
+```shell
+git remote add origin https:/a;sldkgjlkjglkwejglkwe/xxx.git
+```
+
+查看远程仓库
+
+```shell
+git remote -v
+```
+
+修改连接的远程仓库地址
+
+```shell
+git remote set-url origin https:/a;sldkgjlkjglkwejglkwe/xxx.git 
+```
+
+  
 
 6.git push origin master   推送分支到远程仓库
 
