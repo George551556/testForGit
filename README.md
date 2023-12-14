@@ -40,9 +40,15 @@ git remote set-url origin https:/a;sldkgjlkjglkwejglkwe/xxx.git
 
   
 
-6.git push origin master   推送分支到远程仓库
+6. 推送分支到远程仓库
+
+   ```
+   git push origin master
+   ```
 
 ​		若是第一次提交给远程仓库 可以使用 **git push -u origin master**   之后每次使用 **git push** 即可提交远程仓库。非常方便。
+
+​	若在Linux系统上提交代码需要使用远程仓库的ssh地址，使用[csdn.net链接](https://blog.csdn.net/qq_34160841/article/details/104838269) 方法配置密钥即可
 
 7.[解决一个提交时文件不同步的问题](https://blog.csdn.net/m0_52316372/article/details/127446080?ops_request_misc=&request_id=&biz_id=102&utm_term=%20failed%20to%20push%20some%20refs%20to%20%27&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-1-127446080.142^v92^control&spm=1018.2226.3001.4187)  
 
