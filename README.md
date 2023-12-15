@@ -7,7 +7,10 @@ typora-copy-images-to: img
 4
 5
 6
+[TOC]
+
 # testForGit
+
 该仓库是为了学习git提交的相关操作
 7890123123123123123
 0.  git config --global user.name "username" 设置账户名和邮箱
