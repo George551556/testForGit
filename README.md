@@ -80,6 +80,27 @@ git branch --list 查看分支
 
 git checkout feature1 切换到feature1分支上
 
+### 历史版本
+
+使用git log查看历史版本的hash值，如下命令切换到指定版本。此时代码相当于处于一个临时的分支上。
+
+```
+git checkout [hash_id]
+```
+
+切换回当前分支，比如master
+
+```
+git checkout master
+```
+
+如果想保留历史版本的修改并将其保留为一个新分支
+
+```
+git branch <new_branch_name> <commit_hash>  
+git checkout <new_branch_name>
+```
+
 
 
 ### 合并
