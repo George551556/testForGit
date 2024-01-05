@@ -130,17 +130,9 @@ docker cp test.sql 32453245:/root/
 
 ## 命令补充
 
-#### docker
+#### docker命令详情
 
-```
-可以查询已经拉起的环境
-docker ps 
-```
-
-```
-根据ID进入对应的容器/环境
-docker exec -it 8c9475f992bb /bin/bash
-```
+[本地文件](docker各种命令.md) 
 
 #### linux
 
