@@ -46,8 +46,6 @@ git remote -v
 git remote set-url origin https:/a;sldkgjlkjglkwejglkwe/xxx.git 
 ```
 
-  
-
 6. 推送分支到远程仓库
 
    ```
