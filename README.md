@@ -96,6 +96,21 @@ git reset head~ --hard 不光把暂存取消了，也把之前修改过的内容
 
 
 
+### 基于ssh密钥身份验证
+
+[Ubuntu中如何为 GitHub 设置基于 SSH 密钥的身份验证 - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/377361811#:~:text=进入本地库目录并执行下一个命令以允许通过 SSH 工作： git remote set-url origin,git%40github.com%3Ausername%2Frepository-name.git 2. 直接通过 SSH 方式克隆库： git clone git%40github.com%3Ausername%2Frepository-name.git) 
+
+```
+ssh-keygen -t rsa -b 4096  生成一个新密钥对（一路回车即可）
+cat ~/.ssh/id_rsa.pub   获取公钥文件内容
+```
+
+在github个人设置里面找到，点击后找到new ssh key
+
+![image-20240315173453142](D:\my_projects\git_clone\testForGit\img\image-20240315173453142.png)
+
+添加新身份并把获取的公钥文件内容复制进去即可
+
 
 
 ### 注意
