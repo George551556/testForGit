@@ -18,14 +18,20 @@ sudo systemctl status docker
 ```
 查询官方容器库
 docker search [name]  #docker search mysql
+拉取/下载镜像
+docker pull [name]
 列出已安装的docker镜像
 docker images
 ```
 
 ```
-启动一个容器
+从镜像启动一个容器，同时进入容器，此时退出的话容器也会直接关闭
+docker run -it [镜像名]
+在后台启动并长期保持一个容器
+docker run -d -it [镜像名]
+启动一个（已有）容器
 docker start <id_dawl;kgroi90>
-停止一个容器
+停止一个（已有）容器
 docker stop <id_2383d9f8a>
 ```
 
@@ -43,8 +49,14 @@ docker rmi 该镜像ID
 ```
 
 ```
-根据ID进入对应的容器/环境
+根据ID进入已打开的容器/环境
 docker exec -it 8c9475f992bb /bin/bash
+```
+
+```
+从宿主机向容器传递文件或目录
+docker cp local_file.txt container_ID:/path/to/container/
+或者反向传文件，则互换源和目的路径
 ```
 
 
