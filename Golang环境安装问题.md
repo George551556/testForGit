@@ -13,6 +13,7 @@
 
   ```
   go env -w GOPROXY=https://goproxy.cn,direct 
+  go env GOPROXY #查看当前
   ```
 
 - 用安装包安装环境
@@ -24,7 +25,7 @@
   vi ~/.bashrc
   粘贴该行到文件末尾
   export PATH=$PATH:/usr/local/go/bin
-   
+  
   source ~/.bashrc
   ```
   
