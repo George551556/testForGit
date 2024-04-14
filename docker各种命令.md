@@ -29,6 +29,7 @@ docker images
 docker run -it [镜像名]
 在后台启动并长期保持一个容器
 docker run -d -it [镜像名]
+docker run -d --name my_container -p 8080:80 -v /data:/var/www my_image
 启动一个（已有）容器
 docker start <id_dawl;kgroi90>
 停止一个（已有）容器
@@ -57,6 +58,11 @@ docker exec -it 8c9475f992bb /bin/bash
 从宿主机向容器传递文件或目录
 docker cp local_file.txt container_ID:/path/to/container/
 或者反向传文件，则互换源和目的路径
+```
+
+```
+重启docker服务
+sudo systemctl daemon-reload 和 sudo systemctl restart docker
 ```
 
 
