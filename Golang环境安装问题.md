@@ -1,3 +1,7 @@
+---
+typora-copy-images-to: img
+---
+
 ## Ubuntu安装go环境
 
 - 查看系统架构是arm架构还是AMD架构，再从官网下载对应正确的安装包
