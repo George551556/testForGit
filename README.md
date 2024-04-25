@@ -15,9 +15,15 @@ typora-copy-images-to: img
 
 2. git add [文件名或目录]       跟踪文件或目录
 
+   ```
+   只对某种类型的文件进行跟踪，如md文档
+   git add *.md  
+   ```
+
 3. git commit 提交暂存文件到本地仓库
 
    ```
+   更快捷的命令
    git commit -am '提交信息'  
    ```
 
@@ -27,7 +33,7 @@ typora-copy-images-to: img
 
 5. 远程仓库
 
-   1. 连接本地仓库到远程仓库
+   连接本地仓库到远程仓库
 
    ```shell
    git remote add origin https:/a;sldkgjlkjglkwejglkwe/xxx.git
@@ -63,8 +69,6 @@ typora-copy-images-to: img
    git stash pop    会直接将最新的stash应用到工作目录中
    ```
 
-   
-
    ​	`git pull -–rebase origin master` 操作，意为先取消commit记录，并且把它们临时保存为补丁(patch)(这些补丁在”.git/rebase”目录中)，之后同步远程库到本地，最后合并补丁到本地库之中
 
 8. 提交到远程仓库
@@ -81,7 +85,7 @@ typora-copy-images-to: img
 
 11. git diff 显示并编辑冲突的内容。 手动编辑冲突的文件，解决冲突。
 
-​      在文件中，Git会用<<<<<<<、=======和>>>>>>>标记出冲突的部分。你需要仔细检查这些标记之间的内容，并根据需要进行修改
+​      在文件中，Git会用<<<<<<<、=======和>>>>>>>标记出冲突的部分。需要仔细检查这些标记之间的内容，并根据需要进行修改
 
 
 
