@@ -79,11 +79,15 @@ typora-copy-images-to: img
    git push -u origin master
    ```
 
-9. git log 显示提交历史
+9.  显示提交历史
 
-10. git log --all --graph  以图形化式显示各分支及merge历史
+   ```
+   git log
+   git log --oneline  以一行简化的信息显示提交日志
+   git log --all --graph  以图形化式显示各分支及merge历史
+   ```
 
-11. git diff 显示并编辑冲突的内容。 手动编辑冲突的文件，解决冲突。
+10. git diff 显示并编辑冲突的内容。 手动编辑冲突的文件，解决冲突。
 
 ​      在文件中，Git会用<<<<<<<、=======和>>>>>>>标记出冲突的部分。需要仔细检查这些标记之间的内容，并根据需要进行修改
 
@@ -95,7 +99,12 @@ git brance feature 创建名为feature的分支
 
 git branch --list 查看分支
 
+```
 git checkout feature1 切换到feature1分支上
+git checkout <commit-hash> 切换到历史提交版本
+```
+
+
 
 
 
