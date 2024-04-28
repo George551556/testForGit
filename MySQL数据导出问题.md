@@ -16,7 +16,7 @@ select @@datadir;
 
 输出结果：
 
-![image-20231210131109500](C:\Users\JackLiu\Pictures\typora\image-20231210131109500.png)
+![image-20231210131109500](img\image-20231210131109500.png)
 
 再使用以下命令查看安全目录参数
 
@@ -26,7 +26,7 @@ show variables like '%secure%'
 
 
 
-![image-20231210130421972](C:\Users\JackLiu\Pictures\typora\image-20231210130421972.png)
+![image-20231210130421972](img\image-20231210130421972.png)
 
 设置secure_file_priv的值与上面datadir的一样，使用如下命令打开并编辑
 
@@ -49,7 +49,7 @@ sudo systemctl restart mysql
 
 最后将需要保存的表数据直接放在该目录下即可
 
-![image-20231210131333767](C:\Users\JackLiu\Pictures\typora\image-20231210131333767.png)
+![image-20231210131333767](img\image-20231210131333767.png)
 
 
 

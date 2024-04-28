@@ -10,7 +10,7 @@ typora-copy-images-to: img
   lscpu | grep Architecture
   ```
 
-  ![image-20240315170440804](C:\Users\JackLiu\Pictures\typora\image-20240315170440804.png)
+  ![image-20240315170440804](img\image-20240315170440804.png)
 
 
 - 设置国内下载代理源
