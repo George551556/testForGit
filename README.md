@@ -102,10 +102,8 @@ git branch --list 查看分支
 ```
 git checkout feature1 切换到feature1分支上
 git checkout <commit-hash> 切换到历史提交版本
+git switch -         恢复到当前版本
 ```
-
-
-
 
 
 ### 合并
@@ -135,7 +133,7 @@ cat ~/.ssh/id_rsa.pub   获取公钥文件内容
 
 在github个人设置里面找到，点击后找到new ssh key
 
-![image-20240315173453142](D:\my_projects\git_clone\testForGit\img\image-20240315173453142.png)
+![image-20240315173453142](img\image-20240315173453142.png)
 
 添加新身份并把获取的公钥文件内容复制进去即可
 
