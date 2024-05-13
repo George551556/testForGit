@@ -15,6 +15,8 @@ typora-copy-images-to: img
 
 2. git add [文件名或目录]       跟踪文件或目录
 
+   git rm [file]   取消文件的跟踪
+
    ```
    只对某种类型的文件进行跟踪，如md文档
    git add *.md  
@@ -67,6 +69,7 @@ typora-copy-images-to: img
    ```
    git stash list
    git stash pop    会直接将最新的stash应用到工作目录中
+   git stash drop 0 清楚最新的一个stash
    ```
 
    ​	`git pull -–rebase origin master` 操作，意为先取消commit记录，并且把它们临时保存为补丁(patch)(这些补丁在”.git/rebase”目录中)，之后同步远程库到本地，最后合并补丁到本地库之中
@@ -79,7 +82,7 @@ typora-copy-images-to: img
    git push -u origin master
    ```
 
-9.  显示提交历史
+9. 显示提交历史
 
    ```
    git log
