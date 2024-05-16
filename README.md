@@ -7,7 +7,7 @@ typora-copy-images-to: img
 
 
 ### testForGit
-0.git config --global user.name "username" 设置账户名和邮箱
+0. git config --global user.name "username" 设置账户名和邮箱
 
 ​		git config --global user.email "email"
 
@@ -88,11 +88,24 @@ typora-copy-images-to: img
    git log
    git log --oneline  以一行简化的信息显示提交日志
    git log --all --graph  以图形化式显示各分支及merge历史
+   查看最近3条更新日志，并且简单显示出所涉及的文件
+   git log -3 --stat
+   查看某一次提交的内容，执行下面命令（可以不加--stat）
+   git show {commit_id} --stat
    ```
 
 10. git diff 显示并编辑冲突的内容。 手动编辑冲突的文件，解决冲突。
 
 ​      在文件中，Git会用<<<<<<<、=======和>>>>>>>标记出冲突的部分。需要仔细检查这些标记之间的内容，并根据需要进行修改
+
+```bash
+查看该次提交与上次提交对所有文件所做的修改
+git diff [commit_id]^
+如下方式可以查看指定文件的修改
+git diff commit_id -- <file_path>
+```
+
+
 
 
 
