@@ -103,6 +103,8 @@ typora-copy-images-to: img
 git diff [commit_id]^
 如下方式可以查看指定文件的修改
 git diff commit_id -- <file_path>
+查看最新提交相对于上一次提交所做的修改，可选加文件名称
+git diff head^ head [file_path]
 ```
 
 
