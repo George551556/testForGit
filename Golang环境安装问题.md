@@ -18,6 +18,9 @@ typora-copy-images-to: img
   ```
   go env -w GOPROXY=https://goproxy.cn,direct 
   go env GOPROXY #查看当前
+  
+  恢复为原来默认的下载源
+  go env -w GOPROXY=https://proxy.golang.org
   ```
 
 - 用安装包安装环境
@@ -41,6 +44,7 @@ typora-copy-images-to: img
 
 ```
 # 删除go目录(使用go env查看GOROOT的目录)
+go env|grep GOROOT
 sudo rm -rf /usr/local/go
 # 删除删除软链接
 sudo rm -rf /usr/bin/go

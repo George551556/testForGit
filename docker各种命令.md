@@ -29,7 +29,8 @@ docker images
 docker run -it [镜像名]
 在后台启动并长期保持一个容器
 docker run -d -it [镜像名]
-docker run -d --name my_container -p 8080:80 -v /data:/var/www my_image
+端口：[宿主机端口：容器内部端口]
+docker run -d -it --name my_container -p 8080:80 -v /data:/var/www my_image
 启动一个（已有）容器
 docker start <id_dawl;kgroi90>
 停止一个（已有）容器
