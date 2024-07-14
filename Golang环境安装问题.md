@@ -26,13 +26,16 @@ typora-copy-images-to: img
 - 用安装包安装环境
 
   ```
-  解压到对应位置
+  1.解压到对应位置
   sudo tar -C /usr/local -xzf go1.15.linux-amd64.tar.gz
-  打开文件
+  2.打开文件
   vi ~/.bashrc
-  粘贴该行到文件末尾
-  export PATH=$PATH:/usr/local/go/bin
+  	2.1粘贴该行到文件末尾
+  	export PATH=$PATH:/usr/local/go/bin  # 把编译器主目录加入环境变量
+  	2.2粘贴下面这行，即把工作区目录GOPATH加入环境变量（使用go install编译后的可执行文件都会放在该目录下，使用对应指令即可直接运行）
+  	export PATH=$PATH:/home/karen/go/bin # 需要把“karen”替换为实际用户名
   
+  3.使 
   source ~/.bashrc
   ```
   
