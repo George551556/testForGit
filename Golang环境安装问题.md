@@ -39,7 +39,9 @@ typora-copy-images-to: img
   source ~/.bashrc
   ```
   
-  
+  > 或直接使用如下命令也可将其添加到文件末尾
+  >
+  > echo 'export PATH=$PATH:/usr/local/go/bin' >> ~/.bashrc
 
 ## 卸载go环境
 
