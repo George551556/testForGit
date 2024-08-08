@@ -42,6 +42,14 @@ typora-copy-images-to: img
   > 或直接使用如下命令也可将其添加到文件末尾
   >
   > echo 'export PATH=$PATH:/usr/local/go/bin' >> ~/.bashrc
+  
+- 调试工具delve
+
+  ```
+  go install -v github.com/go-delve/delve/cmd/dlv@latest
+  ```
+
+  
 
 ## 卸载go环境
 
@@ -62,3 +70,20 @@ sudo apt-get remove golang-go
 sudo apt-get remove --auto-remove golang-go
 ```
 
+
+
+## go单元测试的设置步骤
+
+1. 在对需要测试的函数文件同目录下创建测试文件xxx_test.go 要求文件名后缀必须为“_test” 
+
+2. 对该xxx_test.go文件编辑：自己所属的包与被测试文件相同；import一个官方的“testing”包；
+
+3. 在其中编写测试函数，函数名为TestAdd，要求开头必须为“Test”且后面紧跟着的第一个字母必须为大写
+
+4. 之后导航到该测试文件目录下使用如下命令即可运行单元测试
+
+   ```go
+   go test
+   ```
+
+   或者编缉器会在TestAdd函数的上方左边渲染出（三角形）启动测试按钮，直接点击即可
