@@ -2,6 +2,8 @@
 
 1. 在`/etc/systemd/system`目录下创建类似`mytask.service`的文件，文件内容格式如下：
 
+   > 部署时需要删除所有注释，否则报错
+
    ```bash
    [Unit]
    Description=MyApp Service
