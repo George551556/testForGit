@@ -140,6 +140,13 @@ git reset HEAD~ --hard 不光把暂存取消了，也把之前修改过的内容
 
 git restore file.txt					撤销对文件的修改
 
+```bash
+git reset filename    取消某个文件的暂存状态，并保留对文件的修改
+git restore filename  撤销对文件的修改，但如果该文件的修改已经在暂存区中则该命令没有任何作用
+```
+
+
+
 
 
 ### 基于ssh密钥身份验证
