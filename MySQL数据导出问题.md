@@ -28,14 +28,14 @@ show variables like '%secure%'
 
 ![image-20231210130421972](img\image-20231210130421972.png)
 
-设置secure_file_priv的值与上面datadir的一样，使用如下命令打开并编辑
+<a id="aiobj">设置</a>secure_file_priv的值与上面datadir的一样，使用如下命令打开并编辑
 
 ```
 vi /etc/my.cnf #我是这种方式打开
 vi /etc/mysql/my.cnf
 ```
 
-在打开的文件中设置secure_file_priv的值（如果没有则自己添加，如下）
+在打开的文件中设置secure_file_priv的值（如果没有则自己添加，如下，在[mysqld]部分添加）
 
 ```
 secure-file-priv = /path/to/your/directory
@@ -50,6 +50,17 @@ sudo systemctl restart mysql
 最后将需要保存的表数据直接放在该目录下即可
 
 ![image-20231210131333767](img\image-20231210131333767.png)
+
+
+
+## 问题1-新
+
+> 25.2.2日在阿里云服务器上的MySQL（使用宝塔安装）导出数据又权限不足，上面的解决方法无效，以下为新的解决方法：
+
+---
+
+- 先设置导出目录，类似[上面方法](#aiobj)，**建议导出目录**设置为`/var/lib/mysql-files`，同时在对应位置创建该目录，（这个目录是MySQL默认允许的安全导入导出目录，其他路径如/root通常不适合用于MySQL文件操作，而云服务器默认是使用root用户登录，因此可能是造成这个问题的原因）
+- 使用root权限进入数据库执行...into outfile...导出数据，即可成功
 
 
 
@@ -86,7 +97,7 @@ load data local infile 'C:\\Users\\JackLiu\\Desktop\\fsdownload\\todolist_save_u
 
 **导出为txt**
 
-导出为txt
+> 这里的“into outfile”是语法关键字，无需改变
 
 ```
 select * from table_name into outfile '/www/server/data/test.txt';
