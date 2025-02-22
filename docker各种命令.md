@@ -66,6 +66,15 @@ docker cp local_file.txt container_ID:/path/to/container/
 sudo systemctl daemon-reload 和 sudo systemctl restart docker
 ```
 
+### 其他命令
+
+将容器更改为（系统开机）自动重启
+
+```bash
+docker update --restart=always [容器ID/name] #已有容器的修改
+docker run -d --restart=always [id/name  ]	#新容器
+```
+
 
 
 ### 链接
