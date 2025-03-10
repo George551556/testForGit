@@ -132,13 +132,20 @@ git switch -         恢复到当前版本
 
 ### 撤销提交reset
 
-git reset head~ --soft   撤销最后一次commit（而之前使用git add设置的文件暂存状态仍然存在）
+git reset HEAD~ --soft   撤销最后一次commit（而之前使用git add设置的文件暂存状态仍然存在）
 
-git reset head~             撤销commit以及暂存状态，但是修改过的内容还在
+git reset HEAD~             撤销commit以及暂存状态，但是修改过的内容还在
 
-git reset head~ --hard 不光把暂存取消了，也把之前修改过的内容也撤销了  **慎用** 
+git reset HEAD~ --hard 不光把暂存取消了，也把之前修改过的内容也撤销了  **慎用** 
 
 git restore file.txt					撤销对文件的修改
+
+```bash
+git reset filename    取消某个文件的暂存状态，并保留对文件的修改
+git restore filename  撤销对文件的修改，但如果该文件的修改已经在暂存区中则该命令没有任何作用
+```
+
+
 
 
 
