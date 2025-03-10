@@ -25,6 +25,11 @@ docker images
 ```
 
 ```
+构建镜像（注意末尾的“.”，表示使用当前路径下的dockerfile）
+docker build -t myapp:v1 .
+```
+
+```
 从镜像启动一个容器，同时进入容器，此时退出的话容器也会直接关闭
 docker run -it [镜像名]
 在后台启动并长期保持一个容器
